@@ -1,6 +1,7 @@
 {
   "name": "obrona-prezka",
   "version": "0.1.0",
+  "homepage": "https://kyattpl.github.io/obrona-prezka",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
