@@ -258,6 +258,7 @@ const slides = [
 
 const Presentation = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [showDetails, setShowDetails] = useState(false);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -267,15 +268,27 @@ const Presentation = () => {
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
   };
 
+  const toggleDetails = () => {
+    setShowDetails((prev) => !prev);
+  };
+
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
       <div className="w-full max-w-4xl bg-white rounded-lg shadow-lg p-8">
         <h2 className="text-2xl font-bold mb-4">{slides[currentSlide].title}</h2>
-        <ul className="list-disc pl-6 space-y-2">
-          {slides[currentSlide].content.map((item, index) => (
-            <li key={index} className="text-lg">{item}</li>
-          ))}
-        </ul>
+        {showDetails && (
+          <ul className="list-disc pl-6 space-y-2">
+            {slides[currentSlide].content.map((item, index) => (
+              <li key={index} className="text-lg">{item}</li>
+            ))}
+          </ul>
+        )}
+        <button
+          onClick={toggleDetails}
+          className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+        >
+          {showDetails ? 'Hide Details' : 'Show Details'}
+        </button>
       </div>
       <div className="flex justify-between w-full max-w-4xl mt-4">
         <button

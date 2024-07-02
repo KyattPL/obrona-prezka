@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/obrona-prezka/static/css/main.1f3a62c4.css",
-    "main.js": "/obrona-prezka/static/js/main.1b98bb16.js",
+    "main.js": "/obrona-prezka/static/js/main.e2e55faf.js",
     "static/js/453.a1f374c3.chunk.js": "/obrona-prezka/static/js/453.a1f374c3.chunk.js",
     "index.html": "/obrona-prezka/index.html",
     "main.1f3a62c4.css.map": "/obrona-prezka/static/css/main.1f3a62c4.css.map",
-    "main.1b98bb16.js.map": "/obrona-prezka/static/js/main.1b98bb16.js.map",
+    "main.e2e55faf.js.map": "/obrona-prezka/static/js/main.e2e55faf.js.map",
     "453.a1f374c3.chunk.js.map": "/obrona-prezka/static/js/453.a1f374c3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1f3a62c4.css",
-    "static/js/main.1b98bb16.js"
+    "static/js/main.e2e55faf.js"
   ]
 }
